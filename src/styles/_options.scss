@@ -1,0 +1,28 @@
+.options {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    &__items {
+
+        &__item {
+            display: flex;
+            justify-content:space-evenly;
+            text-decoration: none;
+            margin-top: 16px;
+
+            img {
+                width: 64px;
+                padding-bottom: 10px;
+
+                @media(max-width: 768px){
+                    width: 48px;
+                }
+            }
+        }
+    }
+    
+}

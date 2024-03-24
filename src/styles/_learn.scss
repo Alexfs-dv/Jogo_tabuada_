@@ -1,0 +1,12 @@
+.learn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    &__options {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 7px;
+    }
+}

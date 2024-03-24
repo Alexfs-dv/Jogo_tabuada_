@@ -1,3 +1,74 @@
+@use 'variables';
+@use 'options';
+@use 'components/buttons';
+@use 'learn';
+@use 'play';
+
 body {
-    background-color: red;
+    background-color: variables.$bgColorBody;
+    font-family: lobster, cursive;
+    overflow-y: hidden;
+}
+
+.container {
+    max-width: 560px;
+
+    @media(max-width: 768px){
+        max-width: 95%;
+    }
+
+}
+
+.output {
+    background-color: variables.$outputColor;
+    color: variables.$textColor;
+    width: 100%;
+    height: 55vh;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px variables.$shadowColor;
+}
+
+.back-icon {
+        
+    img {
+        width: 50px;
+        filter: drop-shadow(2px 2px variables.$shadowColor);
+    }
+
+    a {
+        text-decoration: none;
+        color: variables.$textColor;
+        font-size: 26px;
+        text-shadow: 2px 2px 2px variables.$shadowColor;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+@mixin title($fontSize: 3rem){
+    font-size: $fontSize;
+    color: #4cd137;
+}
+
+.title {
+    @include title();
+    color: variables.$textColor;
+
+    @media(max-width: 768px){
+        font-size: 2rem;
+    }
+
+}
+
+.title--big {
+    @include title(8rem);
+    text-shadow: 2px 2px 2px variables.$shadowColor;
+    
+    @media(max-width: 768px){
+        font-size: 5rem;
+    }
 }
