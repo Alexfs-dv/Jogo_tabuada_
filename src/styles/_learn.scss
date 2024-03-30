@@ -9,4 +9,13 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 7px;
     }
+
+    .output--learn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        font-size: 22px;
+    }
 }

@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
-    <header class="options">
+    <header class="options" id="options">
         <div class="container">
             <h1 class="title title--big">Tabuada</h1>
             <div class="options__items title">
-                <a href="#learn" class="options__items__item title button button--primary">
+                <a href="#learn" class="options__items__item title button button--primary" id="learn-button">
                     <img src="./images/icones_interface/estudo.png" alt="Icone Aprender">
                     Aprender
                 </a>
-                <a href="#play" class="options__items__item title button button--primary">
+                <a href="#play" class="options__items__item title button button--primary" id="play-button">
                     <img src="./images/icones_interface/controlador.png" alt="Icone Jogar">
                     Jogar
                 </a>
@@ -38,7 +38,7 @@
                     Voltar
                 </a>
             </div>
-            <div class="output output--learn"></div>
+            <div class="output output--learn" id="output-learn"></div>
             <div class="learn__options">
                 <button class="learn__options__button button button--primary" value="1" type="button">1</button>
                 <button class="learn__options__button button button--primary" value="2" type="button">2</button>
@@ -120,6 +120,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./scripts/jquery-3.7.1.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
